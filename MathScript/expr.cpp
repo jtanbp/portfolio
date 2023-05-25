@@ -379,38 +379,76 @@ void Let::pretty_print_at(std::ostream &os, precedence_t precedence, long pos, b
     }
 }
 
+/****************************/
+
 // Bool Expression
 
+/**
+ * \brief Sets value for the Bool expression
+ * \param value - representing the boolean
+ */
 BoolExpr::BoolExpr(bool value) : value(value) {}
 
+/**
+ * \brief Compare Value
+ * \param other - expression
+ * \return Boolean result
+ */
 bool BoolExpr::equals(PTR(Expr) other) {
     PTR(BoolExpr) other_bool = CAST(BoolExpr)(other);
     return other_bool && value == other_bool->value;
 }
 
+/**
+ * \brief Interprets the bool expression by returning the bool val in the expression
+ * \return boolean value
+*/
 PTR(Val) BoolExpr::interp(PTR(Env) env) {
     return NEW(BoolVal)(value);
 }
 
+/**
+ * \brief prints out the bool expression
+ */
 void BoolExpr::print(std::ostream &os) {
     os << (value ? "_true" : "_false");
 }
 
+/**
+ * \brief driver function for pretty print
+ * \return string of the expression
+ */
 std::string BoolExpr::pretty_print() {
     std::stringstream st("");
     this->pretty_print_at(st, prec_none, 0, false);
     return st.str();
 }
 
+/**
+ * \brief prints out the boolean expression
+ */
 void BoolExpr::pretty_print_at(std::ostream &os, precedence_t precedence, long pos, bool right_side) {
     print(os);
 }
 
-// If Expression
+/****************************/
 
+// If Expression
+/**
+ * \brief Sets condition, then clause, and else clause for if expression
+ * \param cond - expression of the if expression
+ * \param then_expr - expression representing the then clause of the expression
+ * \param else_expr - expression representing the else clause of the expression
+ */
 IfExpr::IfExpr(PTR(Expr) cond, PTR(Expr) then_expr, PTR(Expr) else_expr)
     : cond(cond), then_expr(then_expr), else_expr(else_expr) {}
 
+
+/**
+ * \brief Compare Value
+ * \param other - expression
+ * \return Boolean result
+ */
 bool IfExpr::equals(PTR(Expr) other) {
     PTR(IfExpr) other_if = CAST(IfExpr)(other);
     return other_if && cond->equals(other_if->cond) &&
@@ -418,6 +456,10 @@ bool IfExpr::equals(PTR(Expr) other) {
            else_expr->equals(other_if->else_expr);
 }
 
+/**
+ * \brief Interprets the if expression
+ * \return Val of the interp (even if it is nested)
+*/
 PTR(Val) IfExpr::interp(PTR(Env) env) {
     PTR(Val) test_val = cond->interp(env);
     if (test_val->is_true()) {
@@ -427,16 +469,26 @@ PTR(Val) IfExpr::interp(PTR(Env) env) {
     }
 }
 
+/**
+ * \brief prints out the if expression with parentheses
+ */
 void IfExpr::print(std::ostream &os) {
     os << "_if " << cond->to_string() << " _then " << then_expr->to_string() << " _else " << else_expr->to_string();
 }
 
+/**
+ * \brief driver function for pretty print
+ * \return string of the expression
+ */
 std::string IfExpr::pretty_print() {
     std::stringstream st("");
     this->pretty_print_at(st, prec_none, 0, false);
     return st.str();
 }
 
+/**
+ * \brief prints out the if expression with parentheses and precedence
+ */
 void IfExpr::pretty_print_at(std::ostream &os, precedence_t precedence, long pos, bool right_side) {
     // calculate position for indentation
     long space = os.tellp();
@@ -450,31 +502,56 @@ void IfExpr::pretty_print_at(std::ostream &os, precedence_t precedence, long pos
     else_expr->pretty_print_at(os, prec_none, pos, false);
 }
 
-// Equals Expression
+/****************************/
 
+// Equals Expression
+/**
+ * \brief Sets left hand side and right hand side for equals expression
+ * \param lhs - expression representing the left hand side of the expression
+ * \param rhs - expression representing the right hand side of the expression
+ */
 EqExpr::EqExpr(PTR(Expr) lhs, PTR(Expr) rhs) : lhs(lhs), rhs(rhs) {}
 
+/**
+ * \brief Compare Value
+ * \param other - expression
+ * \return Boolean result
+ */
 bool EqExpr::equals(PTR(Expr) other) {
     PTR(EqExpr) other_eq = CAST(EqExpr)(other);
     return other_eq && lhs->equals(other_eq->lhs) && rhs->equals(other_eq->rhs);
 }
 
+/**
+ * \brief Interprets the equals expression by comparing both expression within the equals expression
+ * \return Boolean result
+*/
 PTR(Val) EqExpr::interp(PTR(Env) env) {
     PTR(Val) lhs_val = lhs->interp(env);
     PTR(Val) rhs_val = rhs->interp(env);
     return NEW(BoolVal)(lhs_val->equals(rhs_val));
 }
 
+/**
+ * \brief prints out the Equals expression with parentheses
+ */
 void EqExpr::print(std::ostream &os) {
     os << lhs->to_string() << "==" << rhs->to_string();
 }
 
+/**
+ * \brief driver function for pretty print
+ * \return string of the expression
+ */
 std::string EqExpr::pretty_print() {
     std::stringstream st("");
     this->pretty_print_at(st, prec_none, 0, false);
     return st.str();
 }
 
+/**
+ * \brief prints out the equals expression with parentheses and precedence
+ */
 void EqExpr::pretty_print_at(std::ostream &os, precedence_t precedence, long pos, bool right_side) {
     if (precedence > prec_none) {
         os << "(";
@@ -487,30 +564,55 @@ void EqExpr::pretty_print_at(std::ostream &os, precedence_t precedence, long pos
     }
 }
 
-// Function Expression
+/****************************/
 
+// Function Expression
+/**
+ * \brief Sets argument and body for function expression
+ * \param arg - string representing argument
+ * \param body - expression representing the right hand side of the expression
+ */
 FunExpr::FunExpr(std::string arg, PTR(Expr) body) : arg(arg), body(body) {}
 
+/**
+ * \brief Compare Value
+ * \param other - expression
+ * \return Boolean result
+ */
 bool FunExpr::equals(PTR(Expr) other) {
     PTR(FunExpr) other_eq = CAST(FunExpr)(other); 
     return other_eq && other_eq->arg == arg && other_eq->body->equals(body);
 }
 
+/**
+ * \brief Interprets the function expression
+ * \return Function value
+*/
 PTR(Val) FunExpr::interp(PTR(Env) env) {
     return NEW(FunVal)(arg, body, env);
 }
 
+/**
+ * \brief prints out the function expression with parentheses
+ */
 void FunExpr::print(std::ostream &os) {
     os << "_fun (" << arg << ")\n";
     body->print(os);
 }
 
+/**
+ * \brief driver function for pretty print
+ * \return string of the expression
+ */
 std::string FunExpr::pretty_print() {
     std::stringstream st("");
     this->pretty_print_at(st, prec_none, 0, false);
     return st.str();
 }
 
+/**
+ * \brief prints out the function expression with indentation, parentheses and precedence
+ */
 void FunExpr::pretty_print_at(std::ostream &os, precedence_t precedence, long pos, bool right_side) {
     long space = os.tellp();
     os << "_f";
@@ -520,21 +622,39 @@ void FunExpr::pretty_print_at(std::ostream &os, precedence_t precedence, long po
     body->pretty_print_at(os, prec_none, space, false);
 }
 
-// Call Expression
+/****************************/
 
+// Call Expression
+/**
+ * \brief Sets expression to intepret in the call expression
+ * \param to_be_called - expression representing the desired expression
+ * \param actual_argument - expression representing the actual argument of the expression
+ */
 CallExpr::CallExpr(PTR(Expr) to_be_called, PTR(Expr) actual_argument) : to_be_called(to_be_called), actual_argument(actual_argument) {}
 
+/**
+ * \brief Compare Value
+ * \param other - expression
+ * \return Boolean result
+ */
 bool CallExpr::equals(PTR(Expr) other) {
     PTR(CallExpr)other_eq = CAST(CallExpr)(other);
     return other_eq && other_eq->actual_argument->equals(actual_argument) && other_eq->to_be_called->equals(to_be_called);
 }
 
+/**
+ * \brief Interprets the call expression
+ * \return Replacing actual argument in the expression that is about to be called
+*/
 PTR(Val) CallExpr::interp(PTR(Env) env) {
     PTR(Val) to_be_called_val = to_be_called->interp(env);
     PTR(Val) actual_arg_val = actual_argument->interp(env);
     return to_be_called_val->call(actual_arg_val);
 }
 
+/**
+ * \brief prints out the call expression with parentheses
+ */
 void CallExpr::print(std::ostream &os) {
     to_be_called->print(os);
     os << "(";
@@ -542,12 +662,19 @@ void CallExpr::print(std::ostream &os) {
     os << ")";
 }
 
+/**
+ * \brief driver function for pretty print
+ * \return string of the expression
+ */
 std::string CallExpr::pretty_print() {
     std::stringstream st("");
     this->pretty_print_at(st, prec_none, 0, false);
     return st.str();
 }
 
+/**
+ * \brief prints out the call expression with parentheses and precedence
+ */
 void CallExpr::pretty_print_at(std::ostream &os, precedence_t precedence, long pos, bool right_side) {
     long space = os.tellp();
     to_be_called->pretty_print_at(os, prec_none, space, false);
