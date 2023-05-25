@@ -29,3 +29,7 @@ Working on some personal projects that would get added here as soon as it is com
 * [TLSlite](TLSlite) (University-Guided)
     - Languages: Java
     - Created a streamlined TLS implementation showcasing the complete TLS handshake process, along with seamless encryption and decryption of data exchanged between server and client
+* [axie-market-notifier](axie-market-notifier) (Personal)
+    - Languages: JavaScript
+    - Database: Graphql
+    - Collaborated with another programmer to design a program to notify user whenever an NFT meets a particular criteria on the marketplace
