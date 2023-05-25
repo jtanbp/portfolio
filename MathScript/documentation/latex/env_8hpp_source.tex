@@ -1,0 +1,42 @@
+\hypertarget{env_8hpp_source}{}\doxysection{/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/env.hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ env.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ ExpressionClass}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Jowie\ Tan\ on\ 4/11/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ env\_hpp}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ env\_hpp}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ "{}pointer.h"{}}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}val.h"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ <string>}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ CLASS(Env)\ \{}
+\DoxyCodeLine{00016\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00017\ \ \ \ \ \textcolor{keyword}{virtual}\ PTR(Val)\ lookup(std::string\ find\_name)\ =\ 0;}
+\DoxyCodeLine{00018\ \ \ \ \ \textcolor{keyword}{static}\ PTR(Env)\ empty;}
+\DoxyCodeLine{00019\ \};}
+\DoxyCodeLine{00020\ }
+\DoxyCodeLine{00021\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_empty_env}{EmptyEnv}}\ :\ \textcolor{keyword}{public}\ Env\ \{}
+\DoxyCodeLine{00022\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00023\ \ \ \ \ PTR(Val)\ lookup(std::string\ find\_name);}
+\DoxyCodeLine{00024\ \};}
+\DoxyCodeLine{00025\ }
+\DoxyCodeLine{00026\ \textcolor{keyword}{class\ }\mbox{\hyperlink{class_extended_env}{ExtendedEnv}}\ :\ \textcolor{keyword}{public}\ Env\ \{}
+\DoxyCodeLine{00027\ \textcolor{keyword}{public}:}
+\DoxyCodeLine{00028\ \ \ \ \ \mbox{\hyperlink{class_extended_env}{ExtendedEnv}}(std::string\ name,\ PTR(Val)\ val,\ PTR(Env)\ rest);}
+\DoxyCodeLine{00029\ \ \ \ \ PTR(Val)\ lookup(std::string\ find\_name);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{keyword}{private}:}
+\DoxyCodeLine{00032\ \ \ \ \ std::string\ name;}
+\DoxyCodeLine{00033\ \ \ \ \ PTR(Val)\ val;}
+\DoxyCodeLine{00034\ \ \ \ \ PTR(Env)\ rest;}
+\DoxyCodeLine{00035\ \};}
+\DoxyCodeLine{00036\ }
+\DoxyCodeLine{00037\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ env\_hpp\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

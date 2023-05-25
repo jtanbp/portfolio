@@ -11,24 +11,19 @@ Inheritance diagram for Var\+:\begin{figure}[H]
 \item 
 \mbox{\hyperlink{class_var_a3ce57d6cf54fcb63869a7eaa50c196cb}{Var}} (std\+::string value)
 \begin{DoxyCompactList}\small\item\em Sets String. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_var_a4a6304f016cc722d7e81a15126767a70}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$other)
+bool \mbox{\hyperlink{class_var_a0dc0be9bedee38166997bd8ab62e7de7}{equals}} (PTR(Expr) other)
 \begin{DoxyCompactList}\small\item\em Compare Value. \end{DoxyCompactList}\item 
-int \mbox{\hyperlink{class_var_ac6df55db7c2447d3090dd99ae247ae80}{interp}} ()
-\begin{DoxyCompactList}\small\item\em Interprets the variable expression. \end{DoxyCompactList}\item 
-bool \mbox{\hyperlink{class_var_a6083356e4955e1edfb76b8432672c93e}{has\+\_\+variable}} ()
-\begin{DoxyCompactList}\small\item\em check if expression has variable \end{DoxyCompactList}\item 
-\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_var_a7a2a5d81d6888ba9a046c3fd948c7293}{subst}} (std\+::string target, \mbox{\hyperlink{class_expr}{Expr}} $\ast$other)
-\begin{DoxyCompactList}\small\item\em if variable matches target string, replaces variable with \mbox{\hyperlink{class_expr}{Expr}} other \end{DoxyCompactList}\end{DoxyCompactItemize}
-\begin{DoxyCompactItemize}
+\mbox{\Hypertarget{class_var_ae18a8520d78c84208e8f3920ed1bc131}\label{class_var_ae18a8520d78c84208e8f3920ed1bc131}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
 \item 
-virtual bool \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e)=0
-\item 
-virtual int \mbox{\hyperlink{class_expr_aeba8585d8225419d49166371306542c1}{interp}} ()=0
-\item 
-virtual bool \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{has\+\_\+variable}} ()=0
-\item 
-virtual \mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_expr_a86721c58206b6be6510a7d433943053c}{subst}} (std\+::string target, \mbox{\hyperlink{class_expr}{Expr}} $\ast$other)=0
-\end{DoxyCompactItemize}
+\mbox{\Hypertarget{class_var_ad9979c62cf1c3c60b843670fa61780e8}\label{class_var_ad9979c62cf1c3c60b843670fa61780e8}} 
+void {\bfseries print} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em prints out the variable \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_var_a6ccfa09ebb3ba1638e8e1b5b2c58a4e7}{pretty\+\_\+print}} ()
+\begin{DoxyCompactList}\small\item\em driver function for pretty print \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_var_aacd8a6c0ecd336660134a421ab987641}\label{class_var_aacd8a6c0ecd336660134a421ab987641}} 
+void {\bfseries pretty\+\_\+print\+\_\+at} (std\+::ostream \&os, \mbox{\hyperlink{expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, long pos, bool right\+\_\+side)
+\begin{DoxyCompactList}\small\item\em prints out the variable \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Constructor \& Destructor Documentation}
@@ -44,17 +39,17 @@ Sets String.
 
 
 \begin{DoxyParams}{Parameters}
-{\em string} & value \\
+{\em value} & -\/ string \\
 \hline
 \end{DoxyParams}
 
 
 \doxysubsection{Member Function Documentation}
-\mbox{\Hypertarget{class_var_a4a6304f016cc722d7e81a15126767a70}\label{class_var_a4a6304f016cc722d7e81a15126767a70}} 
+\mbox{\Hypertarget{class_var_a0dc0be9bedee38166997bd8ab62e7de7}\label{class_var_a0dc0be9bedee38166997bd8ab62e7de7}} 
 \index{Var@{Var}!equals@{equals}}
 \index{equals@{equals}!Var@{Var}}
 \doxysubsubsection{\texorpdfstring{equals()}{equals()}}
-{\footnotesize\ttfamily bool Var\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+{\footnotesize\ttfamily bool Var\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{other }\end{DoxyParamCaption})}
 
 
 
@@ -62,77 +57,28 @@ Compare Value.
 
 
 \begin{DoxyParams}{Parameters}
-{\em Expr$\ast$} & other \\
+{\em other} & -\/ expression \\
 \hline
 \end{DoxyParams}
 \begin{DoxyReturn}{Returns}
 Boolean result 
 \end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{class_expr}{Expr}}.
-
-\mbox{\Hypertarget{class_var_a6083356e4955e1edfb76b8432672c93e}\label{class_var_a6083356e4955e1edfb76b8432672c93e}} 
-\index{Var@{Var}!has\_variable@{has\_variable}}
-\index{has\_variable@{has\_variable}!Var@{Var}}
-\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
-{\footnotesize\ttfamily bool Var\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+\mbox{\Hypertarget{class_var_a6ccfa09ebb3ba1638e8e1b5b2c58a4e7}\label{class_var_a6ccfa09ebb3ba1638e8e1b5b2c58a4e7}} 
+\index{Var@{Var}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!Var@{Var}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily std\+::string Var\+::pretty\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
 
 
 
-check if expression has variable 
+driver function for pretty print 
 
 \begin{DoxyReturn}{Returns}
-Boolean true 
+string of the expression 
 \end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{class_expr}{Expr}}.
-
-\mbox{\Hypertarget{class_var_ac6df55db7c2447d3090dd99ae247ae80}\label{class_var_ac6df55db7c2447d3090dd99ae247ae80}} 
-\index{Var@{Var}!interp@{interp}}
-\index{interp@{interp}!Var@{Var}}
-\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
-{\footnotesize\ttfamily int Var\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-Interprets the variable expression. 
-
-\begin{DoxyReturn}{Returns}
-Runtime error as there is no value to interpret 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{class_expr}{Expr}}.
-
-\mbox{\Hypertarget{class_var_a7a2a5d81d6888ba9a046c3fd948c7293}\label{class_var_a7a2a5d81d6888ba9a046c3fd948c7293}} 
-\index{Var@{Var}!subst@{subst}}
-\index{subst@{subst}!Var@{Var}}
-\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
-{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ Var\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{target,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
-
-
-
-if variable matches target string, replaces variable with \mbox{\hyperlink{class_expr}{Expr}} other 
-
-
-\begin{DoxyParams}{Parameters}
-{\em string} & target -\/ target string to replace \\
-\hline
-{\em Expr$\ast$} & other -\/ replacement expression \\
-\hline
-\end{DoxyParams}
-\begin{DoxyReturn}{Returns}
-if variable match, replace variable with \mbox{\hyperlink{class_expr}{Expr}} other; if not match, return variable 
-\end{DoxyReturn}
-
-
-Implements \mbox{\hyperlink{class_expr}{Expr}}.
-
 
 
 The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
 \item 
-/\+Users/jowietan/\+Desktop/\+MSD/\+CS6015/\+Homework/\+Expression\+Class/\+Expression\+Class/\mbox{\hyperlink{expr_8h}{expr.\+h}}\item 
-/\+Users/jowietan/\+Desktop/\+MSD/\+CS6015/\+Homework/\+Expression\+Class/\+Expression\+Class/\mbox{\hyperlink{expr_8cpp}{expr.\+cpp}}\end{DoxyCompactItemize}
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8h}{expr.\+h}}\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8cpp}{expr.\+cpp}}\end{DoxyCompactItemize}

@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MSDScript: /Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.cpp File Reference</title>
+<title>MSDScript: /Users/jowietan/Desktop/portfolio/MathScript/expr.cpp File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -69,16 +69,75 @@ $(function() {
 
 </div><!-- top -->
 <div class="header">
-  <div class="headertitle"><div class="title">/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.cpp File Reference</div></div>
+  <div class="summary">
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">/Users/jowietan/Desktop/portfolio/MathScript/expr.cpp File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Contains all the expression methods that are inherited by <a class="el" href="class_num.html">Num</a>, <a class="el" href="class_add.html">Add</a>, <a class="el" href="class_mult.html">Mult</a> and <a class="el" href="class_var.html">Var</a>.  
+<p>Contains all the expression methods that are inherited by <a class="el" href="class_num.html">Num</a>, <a class="el" href="class_add.html">Add</a>, <a class="el" href="class_mult.html">Mult</a>, <a class="el" href="class_var.html">Var</a>, <a class="el" href="class_let.html">Let</a>, <a class="el" href="class_bool_expr.html">BoolExpr</a>, <a class="el" href="class_if_expr.html">IfExpr</a>, <a class="el" href="class_fun_expr.html">FunExpr</a>, <a class="el" href="class_eq_expr.html">EqExpr</a>, <a class="el" href="class_call_expr.html">CallExpr</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;<a class="el" href="expr_8h_source.html">expr.h</a>&quot;</code><br />
-</div><a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains all the expression methods that are inherited by <a class="el" href="class_num.html">Num</a>, <a class="el" href="class_add.html">Add</a>, <a class="el" href="class_mult.html">Mult</a> and <a class="el" href="class_var.html">Var</a>. </p>
-</div></div><!-- contents -->
+<code>#include &quot;val.h&quot;</code><br />
+</div><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a6c3d4a8a2a90fee9ba487bcb36316f25"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="expr_8cpp.html#a6c3d4a8a2a90fee9ba487bcb36316f25">PTR</a> (Val) <a class="el" href="class_num.html">Num</a></td></tr>
+<tr class="memdesc:a6c3d4a8a2a90fee9ba487bcb36316f25"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interprets the <a class="el" href="class_num.html">Num</a> expression.  <br /></td></tr>
+<tr class="separator:a6c3d4a8a2a90fee9ba487bcb36316f25"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table>
+<a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
+<div class="textblock"><p>Contains all the expression methods that are inherited by <a class="el" href="class_num.html">Num</a>, <a class="el" href="class_add.html">Add</a>, <a class="el" href="class_mult.html">Mult</a>, <a class="el" href="class_var.html">Var</a>, <a class="el" href="class_let.html">Let</a>, <a class="el" href="class_bool_expr.html">BoolExpr</a>, <a class="el" href="class_if_expr.html">IfExpr</a>, <a class="el" href="class_fun_expr.html">FunExpr</a>, <a class="el" href="class_eq_expr.html">EqExpr</a>, <a class="el" href="class_call_expr.html">CallExpr</a>. </p>
+</div><h2 class="groupheader">Function Documentation</h2>
+<a id="a6c3d4a8a2a90fee9ba487bcb36316f25" name="a6c3d4a8a2a90fee9ba487bcb36316f25"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#a6c3d4a8a2a90fee9ba487bcb36316f25">&#9670;&#160;</a></span>PTR()</h2>
+
+<div class="memitem">
+<div class="memproto">
+      <table class="memname">
+        <tr>
+          <td class="memname">PTR </td>
+          <td>(</td>
+          <td class="paramtype">Val&#160;</td>
+          <td class="paramname"></td><td>)</td>
+          <td></td>
+        </tr>
+      </table>
+</div><div class="memdoc">
+
+<p>Interprets the <a class="el" href="class_num.html">Num</a> expression. </p>
+<p>Interprets the call expression.</p>
+<p>Interprets the function expression.</p>
+<p>Interprets the equals expression by comparing both expression within the equals expression.</p>
+<p>Interprets the if expression.</p>
+<p>Interprets the bool expression by returning the bool val in the expression.</p>
+<p>Interprets the let expression by substituting the bound variable in the body with the value and interpreting the result.</p>
+<p>Interprets the variable expression.</p>
+<p>Interprets the <a class="el" href="class_mult.html">Mult</a> expression.</p>
+<p>Interprets the <a class="el" href="class_add.html">Add</a> expression.</p>
+<dl class="section return"><dt>Returns</dt><dd>int Value</dd>
+<dd>
+Int add the value of the left expression and right expression</dd>
+<dd>
+Int times the value of the left expression and right expression</dd>
+<dd>
+Runtime error as there is no value to interpret</dd>
+<dd>
+Int value of the let expression body</dd>
+<dd>
+boolean value</dd>
+<dd>
+Val of the interp (even if it is nested)</dd>
+<dd>
+Boolean result</dd>
+<dd>
+Function value</dd>
+<dd>
+Replacing actual argument in the expression that is about to be called </dd></dl>
+
+</div>
+</div>
+</div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>
 Generated by&#160;<a href="https://www.doxygen.org/index.html"><img class="footer" src="doxygen.svg" width="104" height="31" alt="doxygen"/></a> 1.9.6

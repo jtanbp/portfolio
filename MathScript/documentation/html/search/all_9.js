@@ -1,28 +1,8 @@
 var searchData=
 [
-  ['mapgenerator_0',['MapGenerator',['../class_catch_1_1_generators_1_1_map_generator.html',1,'Catch::Generators']]],
-  ['matchallof_1',['MatchAllOf',['../struct_catch_1_1_matchers_1_1_impl_1_1_match_all_of.html',1,'Catch::Matchers::Impl']]],
-  ['matchanyof_2',['MatchAnyOf',['../struct_catch_1_1_matchers_1_1_impl_1_1_match_any_of.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3',['MatcherBase',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20argt_20_3e_4',['MatcherBase&lt; ArgT &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20double_20_3e_5',['MatcherBase&lt; double &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20std_3a_3aexception_20_3e_6',['MatcherBase&lt; std::exception &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20std_3a_3astring_20_3e_7',['MatcherBase&lt; std::string &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20std_3a_3avector_3c_20t_2c_20alloc_20_3e_20_3e_8',['MatcherBase&lt; std::vector&lt; T, Alloc &gt; &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matcherbase_3c_20std_3a_3avector_3c_20t_2c_20allocmatch_20_3e_20_3e_9',['MatcherBase&lt; std::vector&lt; T, AllocMatch &gt; &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_base.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_10',['MatcherMethod',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20argt_20_3e_11',['MatcherMethod&lt; ArgT &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20double_20_3e_12',['MatcherMethod&lt; double &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20std_3a_3aexception_20_3e_13',['MatcherMethod&lt; std::exception &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20std_3a_3astring_20_3e_14',['MatcherMethod&lt; std::string &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20std_3a_3avector_3c_20t_2c_20alloc_20_3e_20_3e_15',['MatcherMethod&lt; std::vector&lt; T, Alloc &gt; &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20std_3a_3avector_3c_20t_2c_20allocmatch_20_3e_20_3e_16',['MatcherMethod&lt; std::vector&lt; T, AllocMatch &gt; &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matchermethod_3c_20t_20_3e_17',['MatcherMethod&lt; T &gt;',['../struct_catch_1_1_matchers_1_1_impl_1_1_matcher_method.html',1,'Catch::Matchers::Impl']]],
-  ['matcheruntypedbase_18',['MatcherUntypedBase',['../class_catch_1_1_matchers_1_1_impl_1_1_matcher_untyped_base.html',1,'Catch::Matchers::Impl']]],
-  ['matchexpr_19',['MatchExpr',['../class_catch_1_1_match_expr.html',1,'Catch']]],
-  ['matchnotof_20',['MatchNotOf',['../struct_catch_1_1_matchers_1_1_impl_1_1_match_not_of.html',1,'Catch::Matchers::Impl']]],
-  ['messagebuilder_21',['MessageBuilder',['../struct_catch_1_1_message_builder.html',1,'Catch']]],
-  ['messageinfo_22',['MessageInfo',['../struct_catch_1_1_message_info.html',1,'Catch']]],
-  ['messagestream_23',['MessageStream',['../struct_catch_1_1_message_stream.html',1,'Catch']]],
-  ['mult_24',['Mult',['../class_mult.html',1,'']]]
+  ['precedence_5ft_0',['precedence_t',['../expr_8h.html#a9e5fdf365cd8dc7be4d972daf07f8bdf',1,'expr.h']]],
+  ['pretty_5fprint_1',['pretty_print',['../class_num.html#af9d7d86abc04a54f4035c34a91dbc86e',1,'Num::pretty_print()'],['../class_add.html#a992098fbda969fa503401a0dca65734b',1,'Add::pretty_print()'],['../class_mult.html#ae4d053adfacdce32ef81c922571e0951',1,'Mult::pretty_print()'],['../class_var.html#a6ccfa09ebb3ba1638e8e1b5b2c58a4e7',1,'Var::pretty_print()'],['../class_let.html#a4dd2f24e970fef84deb4b100f3166301',1,'Let::pretty_print()'],['../class_bool_expr.html#aa4ccbf2f7a84fbfd81e6c4158f3ad945',1,'BoolExpr::pretty_print()'],['../class_if_expr.html#adf15880b7a5dd1747462bf2f6e2fd29d',1,'IfExpr::pretty_print()'],['../class_eq_expr.html#aa97a1e2382c04d29af103039cc4f8495',1,'EqExpr::pretty_print()'],['../class_fun_expr.html#a8403372f592ada30e2f4652480384d06',1,'FunExpr::pretty_print()'],['../class_call_expr.html#aa2401470c553caa64f0452831c9e6f38',1,'CallExpr::pretty_print()']]],
+  ['pretty_5fprint_5fat_2',['pretty_print_at',['../class_add.html#a89609a6d068949d6103d664557839bc5',1,'Add::pretty_print_at()'],['../class_mult.html#ae18fe25a781118cb7e596e10b9e40323',1,'Mult::pretty_print_at()'],['../class_var.html#aacd8a6c0ecd336660134a421ab987641',1,'Var::pretty_print_at()'],['../class_let.html#a05fac46784b0d95a68a37581311f3858',1,'Let::pretty_print_at()'],['../class_bool_expr.html#a628b3d74c6c973009140b8a0969c350e',1,'BoolExpr::pretty_print_at()'],['../class_if_expr.html#a97c99023553274b08e3acbf4beb6e173',1,'IfExpr::pretty_print_at()'],['../class_eq_expr.html#a5bc6db8e1071ffb748f2a2e590db3436',1,'EqExpr::pretty_print_at()'],['../class_fun_expr.html#ace5f20d42a04b8345994f2b80a7c6df4',1,'FunExpr::pretty_print_at()'],['../class_call_expr.html#a2a767d3060cf8f916529382980a79d78',1,'CallExpr::pretty_print_at()'],['../class_num.html#afec6c695309eb35c58c577fb792586d9',1,'Num::pretty_print_at(std::ostream &amp;os, precedence_t precedence, long pos, bool right_side)']]],
+  ['print_3',['print',['../class_num.html#aa8379865d890e394f5fb211d52a82cb6',1,'Num::print()'],['../class_add.html#a04916ea6db48cf27dafee102d82c29ef',1,'Add::print()'],['../class_mult.html#a2773ad55b9769c9682c72fe83a0c61d7',1,'Mult::print()'],['../class_var.html#ad9979c62cf1c3c60b843670fa61780e8',1,'Var::print()'],['../class_let.html#a56247e62aace62338f6706f358094ff9',1,'Let::print()'],['../class_bool_expr.html#abbb185fea3a59e3c0792823e6d59cbe3',1,'BoolExpr::print()'],['../class_if_expr.html#a7b21906b7d34bc38674912766330ac05',1,'IfExpr::print()'],['../class_eq_expr.html#af658dc1b8ce0939f375d52c5fa87533d',1,'EqExpr::print()'],['../class_fun_expr.html#a21d29f42172d6f8171d13a016d9bcbe7',1,'FunExpr::print()'],['../class_call_expr.html#ae5429074158dc409d3dffc175c555163',1,'CallExpr::print()']]],
+  ['ptr_4',['PTR',['../expr_8cpp.html#a6c3d4a8a2a90fee9ba487bcb36316f25',1,'expr.cpp']]]
 ];

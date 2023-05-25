@@ -1,6 +1,4 @@
 var searchData=
 [
-  ['nameandtags_0',['NameAndTags',['../struct_catch_1_1_name_and_tags.html',1,'Catch']]],
-  ['noncopyable_1',['NonCopyable',['../class_catch_1_1_non_copyable.html',1,'Catch']]],
-  ['num_2',['Num',['../class_num.html',1,'']]]
+  ['var_0',['Var',['../class_var.html',1,'Var'],['../class_var.html#a3ce57d6cf54fcb63869a7eaa50c196cb',1,'Var::Var()']]]
 ];

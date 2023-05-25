@@ -1,18 +1,48 @@
-\hypertarget{cmdline_8h}{}\doxysection{/\+Users/jowietan/\+Desktop/\+MSD/\+CS6015/\+Homework/\+Expression\+Class/\+Expression\+Class/cmdline.h File Reference}
-\label{cmdline_8h}\index{/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/cmdline.h@{/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/cmdline.h}}
+\hypertarget{cmdline_8h}{}\doxysection{/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/cmdline.h File Reference}
+\label{cmdline_8h}\index{/Users/jowietan/Desktop/portfolio/MathScript/cmdline.h@{/Users/jowietan/Desktop/portfolio/MathScript/cmdline.h}}
 
 
 Contain functions to run program from terminal.  
 
 
 {\ttfamily \#include \char`\"{}catch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}parse.\+hpp\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}expr.\+h\char`\"{}}\newline
 {\ttfamily \#include $<$iostream$>$}\newline
 {\ttfamily \#include $<$cstdlib$>$}\newline
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{cmdline_8h_ab7d9043cd339ce50c3582b04c5fbb4df}\label{cmdline_8h_ab7d9043cd339ce50c3582b04c5fbb4df}} 
+enum {\bfseries run\+\_\+mode\+\_\+t} \{ \newline
+{\bfseries do\+\_\+nothing}
+, {\bfseries do\+\_\+test}
+, {\bfseries do\+\_\+interp}
+, {\bfseries do\+\_\+print}
+, \newline
+{\bfseries do\+\_\+pretty\+\_\+print}
+ \}
+\end{DoxyCompactItemize}
 \doxysubsection*{Functions}
 \begin{DoxyCompactItemize}
 \item 
-\mbox{\Hypertarget{cmdline_8h_a6ab43ef83f41802b5ea6a08d275daf1e}\label{cmdline_8h_a6ab43ef83f41802b5ea6a08d275daf1e}} 
-void {\bfseries use\+\_\+arguments} (int argc, char $\ast$$\ast$argv)
+\mbox{\Hypertarget{cmdline_8h_a830c545deb44bba202cdb5c7e450a756}\label{cmdline_8h_a830c545deb44bba202cdb5c7e450a756}} 
+int {\bfseries handle\+\_\+tests} ()
+\item 
+\mbox{\Hypertarget{cmdline_8h_aa043200b887df71e31a88676106c56b8}\label{cmdline_8h_aa043200b887df71e31a88676106c56b8}} 
+int {\bfseries handle\+\_\+interp} ()
+\item 
+\mbox{\Hypertarget{cmdline_8h_a4dccd255772c549a6503cd62f9821abf}\label{cmdline_8h_a4dccd255772c549a6503cd62f9821abf}} 
+int {\bfseries handle\+\_\+print} ()
+\item 
+\mbox{\Hypertarget{cmdline_8h_af9a99346c40e3cdb49eaf454f102007b}\label{cmdline_8h_af9a99346c40e3cdb49eaf454f102007b}} 
+int {\bfseries handle\+\_\+pretty\+\_\+print} ()
+\item 
+\mbox{\Hypertarget{cmdline_8h_ab8934279bdaf06c995cee49760df9119}\label{cmdline_8h_ab8934279bdaf06c995cee49760df9119}} 
+int {\bfseries handle\+\_\+invalid\+\_\+arguments} ()
+\item 
+\mbox{\Hypertarget{cmdline_8h_a0920c84dcbe91d651f46616c6f277b2b}\label{cmdline_8h_a0920c84dcbe91d651f46616c6f277b2b}} 
+run\+\_\+mode\+\_\+t {\bfseries use\+\_\+arguments} (int argc, char $\ast$$\ast$argv)
 \end{DoxyCompactItemize}
 
 

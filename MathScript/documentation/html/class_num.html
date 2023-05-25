@@ -79,37 +79,31 @@ $(function() {
 Inheritance diagram for Num:</div>
 <div class="dyncontent">
  <div class="center">
-  <img src="class_num.png" usemap="#Num_map" alt=""/>
-  <map id="Num_map" name="Num_map">
-<area href="class_expr.html" alt="Expr" shape="rect" coords="0,0,38,24"/>
-  </map>
-</div></div>
+  <img src="class_num.png" alt=""/>
+ </div></div>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="pub-methods" name="pub-methods"></a>
 Public Member Functions</h2></td></tr>
 <tr class="memitem:a9fce58e650a99ae50f4140ed9c87ec9f"><td class="memItemLeft" align="right" valign="top">&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_num.html#a9fce58e650a99ae50f4140ed9c87ec9f">Num</a> (int val)</td></tr>
 <tr class="memdesc:a9fce58e650a99ae50f4140ed9c87ec9f"><td class="mdescLeft">&#160;</td><td class="mdescRight">Sets value.  <br /></td></tr>
 <tr class="separator:a9fce58e650a99ae50f4140ed9c87ec9f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a21f3cd848c1b56a5ae795120826b489a"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_num.html#a21f3cd848c1b56a5ae795120826b489a">equals</a> (<a class="el" href="class_expr.html">Expr</a> *other)</td></tr>
-<tr class="memdesc:a21f3cd848c1b56a5ae795120826b489a"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare Value.  <br /></td></tr>
-<tr class="separator:a21f3cd848c1b56a5ae795120826b489a"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a24f8a1c7ccad82bf7ed1080b59cda6dd"><td class="memItemLeft" align="right" valign="top">int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_num.html#a24f8a1c7ccad82bf7ed1080b59cda6dd">interp</a> ()</td></tr>
-<tr class="memdesc:a24f8a1c7ccad82bf7ed1080b59cda6dd"><td class="mdescLeft">&#160;</td><td class="mdescRight">Interprets the <a class="el" href="class_num.html">Num</a> expression.  <br /></td></tr>
-<tr class="separator:a24f8a1c7ccad82bf7ed1080b59cda6dd"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:ad0ce114704933a1ebe4629848d3e2d6d"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_num.html#ad0ce114704933a1ebe4629848d3e2d6d">has_variable</a> ()</td></tr>
-<tr class="memdesc:ad0ce114704933a1ebe4629848d3e2d6d"><td class="mdescLeft">&#160;</td><td class="mdescRight">check if expression has variable  <br /></td></tr>
-<tr class="separator:ad0ce114704933a1ebe4629848d3e2d6d"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:affb65b547cd8ef9d5b623df61e04f1d0"><td class="memItemLeft" align="right" valign="top"><a class="el" href="class_expr.html">Expr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_num.html#affb65b547cd8ef9d5b623df61e04f1d0">subst</a> (std::string target, <a class="el" href="class_expr.html">Expr</a> *other)</td></tr>
-<tr class="memdesc:affb65b547cd8ef9d5b623df61e04f1d0"><td class="mdescLeft">&#160;</td><td class="mdescRight">if variable matches target string, replaces variable with <a class="el" href="class_expr.html">Expr</a> other. However, since this is not a variable, there is no change.  <br /></td></tr>
-<tr class="separator:affb65b547cd8ef9d5b623df61e04f1d0"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:abf9cdb765fb84304881789d273d7594f"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expr.html#abf9cdb765fb84304881789d273d7594f">equals</a> (<a class="el" href="class_expr.html">Expr</a> *e)=0</td></tr>
-<tr class="separator:abf9cdb765fb84304881789d273d7594f"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:aeba8585d8225419d49166371306542c1"><td class="memItemLeft" align="right" valign="top">virtual int&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expr.html#aeba8585d8225419d49166371306542c1">interp</a> ()=0</td></tr>
-<tr class="separator:aeba8585d8225419d49166371306542c1"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a92dc26078993a4b9721ea732274a435c"><td class="memItemLeft" align="right" valign="top">virtual bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expr.html#a92dc26078993a4b9721ea732274a435c">has_variable</a> ()=0</td></tr>
-<tr class="separator:a92dc26078993a4b9721ea732274a435c"><td class="memSeparator" colspan="2">&#160;</td></tr>
-<tr class="memitem:a86721c58206b6be6510a7d433943053c"><td class="memItemLeft" align="right" valign="top">virtual <a class="el" href="class_expr.html">Expr</a> *&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expr.html#a86721c58206b6be6510a7d433943053c">subst</a> (std::string target, <a class="el" href="class_expr.html">Expr</a> *other)=0</td></tr>
-<tr class="separator:a86721c58206b6be6510a7d433943053c"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:abf098e266d4cc3edc52838f31ab3b653"><td class="memItemLeft" align="right" valign="top">bool&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_num.html#abf098e266d4cc3edc52838f31ab3b653">equals</a> (PTR(Expr) other)</td></tr>
+<tr class="memdesc:abf098e266d4cc3edc52838f31ab3b653"><td class="mdescLeft">&#160;</td><td class="mdescRight">Compare Value.  <br /></td></tr>
+<tr class="separator:abf098e266d4cc3edc52838f31ab3b653"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af6e6e238a487fbd617bbb70e2ea6c4d1"><td class="memItemLeft" align="right" valign="top"><a id="af6e6e238a487fbd617bbb70e2ea6c4d1" name="af6e6e238a487fbd617bbb70e2ea6c4d1"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>PTR</b> (Val) interp(PTR(Env) env)</td></tr>
+<tr class="separator:af6e6e238a487fbd617bbb70e2ea6c4d1"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa8379865d890e394f5fb211d52a82cb6"><td class="memItemLeft" align="right" valign="top"><a id="aa8379865d890e394f5fb211d52a82cb6" name="aa8379865d890e394f5fb211d52a82cb6"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>print</b> (std::ostream &amp;os)</td></tr>
+<tr class="memdesc:aa8379865d890e394f5fb211d52a82cb6"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints out the value <br /></td></tr>
+<tr class="separator:aa8379865d890e394f5fb211d52a82cb6"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9d7d86abc04a54f4035c34a91dbc86e"><td class="memItemLeft" align="right" valign="top">std::string&#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_num.html#af9d7d86abc04a54f4035c34a91dbc86e">pretty_print</a> ()</td></tr>
+<tr class="memdesc:af9d7d86abc04a54f4035c34a91dbc86e"><td class="mdescLeft">&#160;</td><td class="mdescRight">driver function for pretty print  <br /></td></tr>
+<tr class="separator:af9d7d86abc04a54f4035c34a91dbc86e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:afec6c695309eb35c58c577fb792586d9"><td class="memItemLeft" align="right" valign="top"><a id="afec6c695309eb35c58c577fb792586d9" name="afec6c695309eb35c58c577fb792586d9"></a>
+void&#160;</td><td class="memItemRight" valign="bottom"><b>pretty_print_at</b> (std::ostream &amp;os, <a class="el" href="expr_8h.html#a9e5fdf365cd8dc7be4d972daf07f8bdf">precedence_t</a> precedence, long pos, bool right_side)</td></tr>
+<tr class="memdesc:afec6c695309eb35c58c577fb792586d9"><td class="mdescLeft">&#160;</td><td class="mdescRight">prints out the value <br /></td></tr>
+<tr class="separator:afec6c695309eb35c58c577fb792586d9"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <h2 class="groupheader">Constructor &amp; Destructor Documentation</h2>
 <a id="a9fce58e650a99ae50f4140ed9c87ec9f" name="a9fce58e650a99ae50f4140ed9c87ec9f"></a>
@@ -131,7 +125,7 @@ Public Member Functions</h2></td></tr>
 <p>Sets value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname">value</td><td></td></tr>
+    <tr><td class="paramname">val</td><td>- integer </td></tr>
   </table>
   </dd>
 </dl>
@@ -139,154 +133,56 @@ Public Member Functions</h2></td></tr>
 </div>
 </div>
 <h2 class="groupheader">Member Function Documentation</h2>
-<a id="a21f3cd848c1b56a5ae795120826b489a" name="a21f3cd848c1b56a5ae795120826b489a"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a21f3cd848c1b56a5ae795120826b489a">&#9670;&#160;</a></span>equals()</h2>
+<a id="abf098e266d4cc3edc52838f31ab3b653" name="abf098e266d4cc3edc52838f31ab3b653"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#abf098e266d4cc3edc52838f31ab3b653">&#9670;&#160;</a></span>equals()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
           <td class="memname">bool Num::equals </td>
           <td>(</td>
-          <td class="paramtype"><a class="el" href="class_expr.html">Expr</a> *&#160;</td>
+          <td class="paramtype">PTR(Expr)&#160;</td>
           <td class="paramname"><em>other</em></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
 <p>Compare Value. </p>
 <dl class="params"><dt>Parameters</dt><dd>
   <table class="params">
-    <tr><td class="paramname"><a class="el" href="class_expr.html">Expr</a></td><td>other </td></tr>
+    <tr><td class="paramname">other</td><td>- expression </td></tr>
   </table>
   </dd>
 </dl>
 <dl class="section return"><dt>Returns</dt><dd>Boolean result </dd></dl>
 
-<p>Implements <a class="el" href="class_expr.html">Expr</a>.</p>
-
 </div>
 </div>
-<a id="ad0ce114704933a1ebe4629848d3e2d6d" name="ad0ce114704933a1ebe4629848d3e2d6d"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#ad0ce114704933a1ebe4629848d3e2d6d">&#9670;&#160;</a></span>has_variable()</h2>
+<a id="af9d7d86abc04a54f4035c34a91dbc86e" name="af9d7d86abc04a54f4035c34a91dbc86e"></a>
+<h2 class="memtitle"><span class="permalink"><a href="#af9d7d86abc04a54f4035c34a91dbc86e">&#9670;&#160;</a></span>pretty_print()</h2>
 
 <div class="memitem">
 <div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
       <table class="memname">
         <tr>
-          <td class="memname">bool Num::has_variable </td>
+          <td class="memname">std::string Num::pretty_print </td>
           <td>(</td>
           <td class="paramname"></td><td>)</td>
           <td></td>
         </tr>
       </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
 </div><div class="memdoc">
 
-<p>check if expression has variable </p>
-<dl class="section return"><dt>Returns</dt><dd>Boolean false </dd></dl>
-
-<p>Implements <a class="el" href="class_expr.html">Expr</a>.</p>
-
-</div>
-</div>
-<a id="a24f8a1c7ccad82bf7ed1080b59cda6dd" name="a24f8a1c7ccad82bf7ed1080b59cda6dd"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#a24f8a1c7ccad82bf7ed1080b59cda6dd">&#9670;&#160;</a></span>interp()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname">int Num::interp </td>
-          <td>(</td>
-          <td class="paramname"></td><td>)</td>
-          <td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>Interprets the <a class="el" href="class_num.html">Num</a> expression. </p>
-<dl class="section return"><dt>Returns</dt><dd>int Value </dd></dl>
-
-<p>Implements <a class="el" href="class_expr.html">Expr</a>.</p>
-
-</div>
-</div>
-<a id="affb65b547cd8ef9d5b623df61e04f1d0" name="affb65b547cd8ef9d5b623df61e04f1d0"></a>
-<h2 class="memtitle"><span class="permalink"><a href="#affb65b547cd8ef9d5b623df61e04f1d0">&#9670;&#160;</a></span>subst()</h2>
-
-<div class="memitem">
-<div class="memproto">
-<table class="mlabels">
-  <tr>
-  <td class="mlabels-left">
-      <table class="memname">
-        <tr>
-          <td class="memname"><a class="el" href="class_expr.html">Expr</a> * Num::subst </td>
-          <td>(</td>
-          <td class="paramtype">std::string&#160;</td>
-          <td class="paramname"><em>target</em>, </td>
-        </tr>
-        <tr>
-          <td class="paramkey"></td>
-          <td></td>
-          <td class="paramtype"><a class="el" href="class_expr.html">Expr</a> *&#160;</td>
-          <td class="paramname"><em>other</em>&#160;</td>
-        </tr>
-        <tr>
-          <td></td>
-          <td>)</td>
-          <td></td><td></td>
-        </tr>
-      </table>
-  </td>
-  <td class="mlabels-right">
-<span class="mlabels"><span class="mlabel">virtual</span></span>  </td>
-  </tr>
-</table>
-</div><div class="memdoc">
-
-<p>if variable matches target string, replaces variable with <a class="el" href="class_expr.html">Expr</a> other. However, since this is not a variable, there is no change. </p>
-<dl class="params"><dt>Parameters</dt><dd>
-  <table class="params">
-    <tr><td class="paramname">string</td><td>target - target string to replace </td></tr>
-    <tr><td class="paramname">Expr*</td><td>other - replacement expression </td></tr>
-  </table>
-  </dd>
-</dl>
-<dl class="section return"><dt>Returns</dt><dd>this (no change) </dd></dl>
-
-<p>Implements <a class="el" href="class_expr.html">Expr</a>.</p>
+<p>driver function for pretty print </p>
+<dl class="section return"><dt>Returns</dt><dd>string of the expression </dd></dl>
 
 </div>
 </div>
 <hr/>The documentation for this class was generated from the following files:<ul>
-<li>/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/<a class="el" href="expr_8h_source.html">expr.h</a></li>
-<li>/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/<a class="el" href="expr_8cpp.html">expr.cpp</a></li>
+<li>/Users/jowietan/Desktop/portfolio/MathScript/<a class="el" href="expr_8h_source.html">expr.h</a></li>
+<li>/Users/jowietan/Desktop/portfolio/MathScript/<a class="el" href="expr_8cpp.html">expr.cpp</a></li>
 </ul>
 </div><!-- contents -->
 <!-- start footer part -->

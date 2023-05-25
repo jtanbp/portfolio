@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MSDScript: /Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/cmdline.h File Reference</title>
+<title>MSDScript: /Users/jowietan/Desktop/portfolio/MathScript/cmdline.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -71,24 +71,55 @@ $(function() {
 <div class="header">
   <div class="summary">
 <a href="#define-members">Macros</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
 <a href="#func-members">Functions</a>  </div>
-  <div class="headertitle"><div class="title">/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/cmdline.h File Reference</div></div>
+  <div class="headertitle"><div class="title">/Users/jowietan/Desktop/portfolio/MathScript/cmdline.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
 <p>Contain functions to run program from terminal.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &quot;catch.h&quot;</code><br />
+<code>#include &quot;parse.hpp&quot;</code><br />
+<code>#include &quot;<a class="el" href="expr_8h_source.html">expr.h</a>&quot;</code><br />
 <code>#include &lt;iostream&gt;</code><br />
 <code>#include &lt;cstdlib&gt;</code><br />
 </div>
 <p><a href="cmdline_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:ab7d9043cd339ce50c3582b04c5fbb4df"><td class="memItemLeft" align="right" valign="top"><a id="ab7d9043cd339ce50c3582b04c5fbb4df" name="ab7d9043cd339ce50c3582b04c5fbb4df"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><b>run_mode_t</b> { <br />
+&#160;&#160;<b>do_nothing</b>
+, <b>do_test</b>
+, <b>do_interp</b>
+, <b>do_print</b>
+, <br />
+&#160;&#160;<b>do_pretty_print</b>
+<br />
+ }</td></tr>
+<tr class="separator:ab7d9043cd339ce50c3582b04c5fbb4df"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
 Functions</h2></td></tr>
-<tr class="memitem:a6ab43ef83f41802b5ea6a08d275daf1e"><td class="memItemLeft" align="right" valign="top"><a id="a6ab43ef83f41802b5ea6a08d275daf1e" name="a6ab43ef83f41802b5ea6a08d275daf1e"></a>
-void&#160;</td><td class="memItemRight" valign="bottom"><b>use_arguments</b> (int argc, char **argv)</td></tr>
-<tr class="separator:a6ab43ef83f41802b5ea6a08d275daf1e"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a830c545deb44bba202cdb5c7e450a756"><td class="memItemLeft" align="right" valign="top"><a id="a830c545deb44bba202cdb5c7e450a756" name="a830c545deb44bba202cdb5c7e450a756"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>handle_tests</b> ()</td></tr>
+<tr class="separator:a830c545deb44bba202cdb5c7e450a756"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:aa043200b887df71e31a88676106c56b8"><td class="memItemLeft" align="right" valign="top"><a id="aa043200b887df71e31a88676106c56b8" name="aa043200b887df71e31a88676106c56b8"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>handle_interp</b> ()</td></tr>
+<tr class="separator:aa043200b887df71e31a88676106c56b8"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a4dccd255772c549a6503cd62f9821abf"><td class="memItemLeft" align="right" valign="top"><a id="a4dccd255772c549a6503cd62f9821abf" name="a4dccd255772c549a6503cd62f9821abf"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>handle_print</b> ()</td></tr>
+<tr class="separator:a4dccd255772c549a6503cd62f9821abf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:af9a99346c40e3cdb49eaf454f102007b"><td class="memItemLeft" align="right" valign="top"><a id="af9a99346c40e3cdb49eaf454f102007b" name="af9a99346c40e3cdb49eaf454f102007b"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>handle_pretty_print</b> ()</td></tr>
+<tr class="separator:af9a99346c40e3cdb49eaf454f102007b"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:ab8934279bdaf06c995cee49760df9119"><td class="memItemLeft" align="right" valign="top"><a id="ab8934279bdaf06c995cee49760df9119" name="ab8934279bdaf06c995cee49760df9119"></a>
+int&#160;</td><td class="memItemRight" valign="bottom"><b>handle_invalid_arguments</b> ()</td></tr>
+<tr class="separator:ab8934279bdaf06c995cee49760df9119"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:a0920c84dcbe91d651f46616c6f277b2b"><td class="memItemLeft" align="right" valign="top"><a id="a0920c84dcbe91d651f46616c6f277b2b" name="a0920c84dcbe91d651f46616c6f277b2b"></a>
+run_mode_t&#160;</td><td class="memItemRight" valign="bottom"><b>use_arguments</b> (int argc, char **argv)</td></tr>
+<tr class="separator:a0920c84dcbe91d651f46616c6f277b2b"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
 <div class="textblock"><p>Contain functions to run program from terminal. </p>

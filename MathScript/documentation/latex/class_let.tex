@@ -1,0 +1,88 @@
+\hypertarget{class_let}{}\doxysection{Let Class Reference}
+\label{class_let}\index{Let@{Let}}
+Inheritance diagram for Let\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_let}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_let_a15a4ffcab95e2f86d7dd1a3973a9ad08}{Let}} (std\+::string name, PTR(Expr) name\+\_\+value, PTR(Expr) body)
+\begin{DoxyCompactList}\small\item\em Sets name, value, and body for let expression. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_let_aea7b71b61b78bdeba8f5ff454e6e1490}{equals}} (PTR(Expr) other)
+\begin{DoxyCompactList}\small\item\em Compare Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_let_a998fb24e241bae4607a30e05e89eb682}\label{class_let_a998fb24e241bae4607a30e05e89eb682}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
+\item 
+\mbox{\Hypertarget{class_let_a56247e62aace62338f6706f358094ff9}\label{class_let_a56247e62aace62338f6706f358094ff9}} 
+void {\bfseries print} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em prints out the let expression with parentheses \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_let_a4dd2f24e970fef84deb4b100f3166301}{pretty\+\_\+print}} ()
+\begin{DoxyCompactList}\small\item\em driver function for pretty print \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_let_a05fac46784b0d95a68a37581311f3858}\label{class_let_a05fac46784b0d95a68a37581311f3858}} 
+void {\bfseries pretty\+\_\+print\+\_\+at} (std\+::ostream \&os, \mbox{\hyperlink{expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, long pos, bool right)
+\begin{DoxyCompactList}\small\item\em prints out the let expression with parentheses and precedence \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_let_a15a4ffcab95e2f86d7dd1a3973a9ad08}\label{class_let_a15a4ffcab95e2f86d7dd1a3973a9ad08}} 
+\index{Let@{Let}!Let@{Let}}
+\index{Let@{Let}!Let@{Let}}
+\doxysubsubsection{\texorpdfstring{Let()}{Let()}}
+{\footnotesize\ttfamily Let\+::\+Let (\begin{DoxyParamCaption}\item[{std\+::string}]{name,  }\item[{PTR(Expr)}]{name\+\_\+value,  }\item[{PTR(Expr)}]{body }\end{DoxyParamCaption})}
+
+
+
+Sets name, value, and body for let expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em name} & -\/ string representing the variable name \\
+\hline
+{\em name\+\_\+value} & -\/ expression representing the value to bind to the variable \\
+\hline
+{\em body} & -\/ expression representing the body of the let expression \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_let_aea7b71b61b78bdeba8f5ff454e6e1490}\label{class_let_aea7b71b61b78bdeba8f5ff454e6e1490}} 
+\index{Let@{Let}!equals@{equals}}
+\index{equals@{equals}!Let@{Let}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Let\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{other }\end{DoxyParamCaption})}
+
+
+
+Compare Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_let_a4dd2f24e970fef84deb4b100f3166301}\label{class_let_a4dd2f24e970fef84deb4b100f3166301}} 
+\index{Let@{Let}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!Let@{Let}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily std\+::string Let\+::pretty\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+driver function for pretty print 
+
+\begin{DoxyReturn}{Returns}
+string of the expression 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8h}{expr.\+h}}\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8cpp}{expr.\+cpp}}\end{DoxyCompactItemize}

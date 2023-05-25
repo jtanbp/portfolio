@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['expr_0',['Expr',['../class_expr.html',1,'']]]
+  ['boolexpr_0',['BoolExpr',['../class_bool_expr.html',1,'']]],
+  ['boolval_1',['BoolVal',['../class_bool_val.html',1,'']]]
 ];

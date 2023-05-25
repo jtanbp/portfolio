@@ -1,0 +1,30 @@
+\hypertarget{pointer_8h_source}{}\doxysection{/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/pointer.h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{preprocessor}{\#ifndef\ \_\_msdscript\_pointer\_\_}}
+\DoxyCodeLine{00002\ \textcolor{preprocessor}{\#define\ \_\_msdscript\_pointer\_\_}}
+\DoxyCodeLine{00003\ }
+\DoxyCodeLine{00004\ \textcolor{preprocessor}{\#include\ <memory>}}
+\DoxyCodeLine{00005\ }
+\DoxyCodeLine{00006\ \textcolor{preprocessor}{\#define\ USE\_PLAIN\_POINTERS\ 0}}
+\DoxyCodeLine{00007\ \textcolor{preprocessor}{\#if\ USE\_PLAIN\_POINTERS}}
+\DoxyCodeLine{00008\ }
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#\ define\ NEW(T)\ \ \ \ new\ T}}
+\DoxyCodeLine{00010\ \textcolor{preprocessor}{\#\ define\ PTR(T)\ \ \ \ T*}}
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#\ define\ CAST(T)\ \ \ dynamic\_cast<T*>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#\ define\ CLASS(T)\ \ class\ T}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#\ define\ THIS\ \ \ \ \ \ this}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ \textcolor{preprocessor}{\#else}}
+\DoxyCodeLine{00016\ }
+\DoxyCodeLine{00017\ \textcolor{preprocessor}{\#\ define\ NEW(T)\ \ \ \ std::make\_shared<T>}}
+\DoxyCodeLine{00018\ \textcolor{preprocessor}{\#\ define\ PTR(T)\ \ \ \ std::shared\_ptr<T>}}
+\DoxyCodeLine{00019\ \textcolor{preprocessor}{\#\ define\ CAST(T)\ \ \ std::dynamic\_pointer\_cast<T>}}
+\DoxyCodeLine{00020\ \textcolor{preprocessor}{\#\ define\ CLASS(T)\ \ class\ T\ :\ public\ std::enable\_shared\_from\_this<T>}}
+\DoxyCodeLine{00021\ \textcolor{preprocessor}{\#\ define\ THIS\ \ \ \ \ \ shared\_from\_this()}}
+\DoxyCodeLine{00022\ }
+\DoxyCodeLine{00023\ \textcolor{preprocessor}{\#endif}}
+\DoxyCodeLine{00024\ }
+\DoxyCodeLine{00025\ \textcolor{preprocessor}{\#endif}}
+
+\end{DoxyCode}

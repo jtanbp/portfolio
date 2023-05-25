@@ -1,0 +1,88 @@
+\hypertarget{class_if_expr}{}\doxysection{If\+Expr Class Reference}
+\label{class_if_expr}\index{IfExpr@{IfExpr}}
+Inheritance diagram for If\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_if_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_if_expr_a00f7fb2e22e3803d59e75d0f4b0f5851}{If\+Expr}} (PTR(Expr) cond, PTR(Expr) then\+\_\+expr, PTR(Expr) else\+\_\+expr)
+\begin{DoxyCompactList}\small\item\em Sets condition, then clause, and else clause for if expression. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_if_expr_aec742ad46a1ead0496a790e895139b49}{equals}} (PTR(Expr) other)
+\begin{DoxyCompactList}\small\item\em Compare Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_if_expr_a31891f7cc25254f0c38a9044b6432c5d}\label{class_if_expr_a31891f7cc25254f0c38a9044b6432c5d}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
+\item 
+\mbox{\Hypertarget{class_if_expr_a7b21906b7d34bc38674912766330ac05}\label{class_if_expr_a7b21906b7d34bc38674912766330ac05}} 
+void {\bfseries print} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em prints out the if expression with parentheses \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_if_expr_adf15880b7a5dd1747462bf2f6e2fd29d}{pretty\+\_\+print}} ()
+\begin{DoxyCompactList}\small\item\em driver function for pretty print \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_if_expr_a97c99023553274b08e3acbf4beb6e173}\label{class_if_expr_a97c99023553274b08e3acbf4beb6e173}} 
+void {\bfseries pretty\+\_\+print\+\_\+at} (std\+::ostream \&os, \mbox{\hyperlink{expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, long pos, bool right\+\_\+side)
+\begin{DoxyCompactList}\small\item\em prints out the if expression with parentheses and precedence \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_if_expr_a00f7fb2e22e3803d59e75d0f4b0f5851}\label{class_if_expr_a00f7fb2e22e3803d59e75d0f4b0f5851}} 
+\index{IfExpr@{IfExpr}!IfExpr@{IfExpr}}
+\index{IfExpr@{IfExpr}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{IfExpr()}{IfExpr()}}
+{\footnotesize\ttfamily If\+Expr\+::\+If\+Expr (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{cond,  }\item[{PTR(Expr)}]{then\+\_\+expr,  }\item[{PTR(Expr)}]{else\+\_\+expr }\end{DoxyParamCaption})}
+
+
+
+Sets condition, then clause, and else clause for if expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em cond} & -\/ expression of the if expression \\
+\hline
+{\em then\+\_\+expr} & -\/ expression representing the then clause of the expression \\
+\hline
+{\em else\+\_\+expr} & -\/ expression representing the else clause of the expression \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_if_expr_aec742ad46a1ead0496a790e895139b49}\label{class_if_expr_aec742ad46a1ead0496a790e895139b49}} 
+\index{IfExpr@{IfExpr}!equals@{equals}}
+\index{equals@{equals}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool If\+Expr\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{other }\end{DoxyParamCaption})}
+
+
+
+Compare Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_if_expr_adf15880b7a5dd1747462bf2f6e2fd29d}\label{class_if_expr_adf15880b7a5dd1747462bf2f6e2fd29d}} 
+\index{IfExpr@{IfExpr}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!IfExpr@{IfExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily std\+::string If\+Expr\+::pretty\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+driver function for pretty print 
+
+\begin{DoxyReturn}{Returns}
+string of the expression 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8h}{expr.\+h}}\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8cpp}{expr.\+cpp}}\end{DoxyCompactItemize}

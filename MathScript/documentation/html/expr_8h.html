@@ -5,7 +5,7 @@
 <meta http-equiv="X-UA-Compatible" content="IE=11"/>
 <meta name="generator" content="Doxygen 1.9.6"/>
 <meta name="viewport" content="width=device-width, initial-scale=1"/>
-<title>MSDScript: /Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.h File Reference</title>
+<title>MSDScript: /Users/jowietan/Desktop/portfolio/MathScript/expr.h File Reference</title>
 <link href="tabs.css" rel="stylesheet" type="text/css"/>
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript" src="dynsections.js"></script>
@@ -70,22 +70,26 @@ $(function() {
 </div><!-- top -->
 <div class="header">
   <div class="summary">
-<a href="#nested-classes">Classes</a>  </div>
-  <div class="headertitle"><div class="title">/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.h File Reference</div></div>
+<a href="#nested-classes">Classes</a> &#124;
+<a href="#enum-members">Enumerations</a> &#124;
+<a href="#func-members">Functions</a>  </div>
+  <div class="headertitle"><div class="title">/Users/jowietan/Desktop/portfolio/MathScript/expr.h File Reference</div></div>
 </div><!--header-->
 <div class="contents">
 
-<p>Contains the methods that would be defined in <a class="el" href="expr_8cpp.html" title="Contains all the expression methods that are inherited by Num, Add, Mult and Var.">expr.cpp</a>.  
+<p>Contains the methods that would be defined in <a class="el" href="expr_8cpp.html" title="Contains all the expression methods that are inherited by Num, Add, Mult, Var, Let,...">expr.cpp</a>.  
 <a href="#details">More...</a></p>
 <div class="textblock"><code>#include &lt;iostream&gt;</code><br />
+<code>#include &lt;sstream&gt;</code><br />
+<code>#include &lt;cstdlib&gt;</code><br />
 <code>#include &quot;catch.h&quot;</code><br />
+<code>#include &quot;pointer.h&quot;</code><br />
+<code>#include &quot;env.hpp&quot;</code><br />
 </div>
 <p><a href="expr_8h_source.html">Go to the source code of this file.</a></p>
 <table class="memberdecls">
 <tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="nested-classes" name="nested-classes"></a>
 Classes</h2></td></tr>
-<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_expr.html">Expr</a></td></tr>
-<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_num.html">Num</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_add.html">Add</a></td></tr>
@@ -94,9 +98,41 @@ Classes</h2></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
 <tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_var.html">Var</a></td></tr>
 <tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_let.html">Let</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_bool_expr.html">BoolExpr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_if_expr.html">IfExpr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_eq_expr.html">EqExpr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_fun_expr.html">FunExpr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+<tr class="memitem:"><td class="memItemLeft" align="right" valign="top">class &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="class_call_expr.html">CallExpr</a></td></tr>
+<tr class="separator:"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="enum-members" name="enum-members"></a>
+Enumerations</h2></td></tr>
+<tr class="memitem:a9e5fdf365cd8dc7be4d972daf07f8bdf"><td class="memItemLeft" align="right" valign="top"><a id="a9e5fdf365cd8dc7be4d972daf07f8bdf" name="a9e5fdf365cd8dc7be4d972daf07f8bdf"></a>enum &#160;</td><td class="memItemRight" valign="bottom"><a class="el" href="expr_8h.html#a9e5fdf365cd8dc7be4d972daf07f8bdf">precedence_t</a> { <br />
+&#160;&#160;<b>prec_none</b>
+, <b>prec_eq</b>
+, <b>prec_add</b>
+, <b>prec_mult</b>
+, <br />
+&#160;&#160;<b>prec_let</b>
+<br />
+ }</td></tr>
+<tr class="memdesc:a9e5fdf365cd8dc7be4d972daf07f8bdf"><td class="mdescLeft">&#160;</td><td class="mdescRight">defining precedence <br /></td></tr>
+<tr class="separator:a9e5fdf365cd8dc7be4d972daf07f8bdf"><td class="memSeparator" colspan="2">&#160;</td></tr>
+</table><table class="memberdecls">
+<tr class="heading"><td colspan="2"><h2 class="groupheader"><a id="func-members" name="func-members"></a>
+Functions</h2></td></tr>
+<tr class="memitem:a63b2eaf23b08c74ca88c315842119206"><td class="memItemLeft" align="right" valign="top"><a id="a63b2eaf23b08c74ca88c315842119206" name="a63b2eaf23b08c74ca88c315842119206"></a>
+&#160;</td><td class="memItemRight" valign="bottom"><b>CLASS</b> (Expr)</td></tr>
+<tr class="separator:a63b2eaf23b08c74ca88c315842119206"><td class="memSeparator" colspan="2">&#160;</td></tr>
 </table>
 <a name="details" id="details"></a><h2 class="groupheader">Detailed Description</h2>
-<div class="textblock"><p>Contains the methods that would be defined in <a class="el" href="expr_8cpp.html" title="Contains all the expression methods that are inherited by Num, Add, Mult and Var.">expr.cpp</a>. </p>
+<div class="textblock"><p>Contains the methods that would be defined in <a class="el" href="expr_8cpp.html" title="Contains all the expression methods that are inherited by Num, Add, Mult, Var, Let,...">expr.cpp</a>. </p>
 </div></div><!-- contents -->
 <!-- start footer part -->
 <hr class="footer"/><address class="footer"><small>

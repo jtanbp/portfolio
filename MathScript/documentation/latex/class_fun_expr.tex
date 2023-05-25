@@ -1,0 +1,92 @@
+\hypertarget{class_fun_expr}{}\doxysection{Fun\+Expr Class Reference}
+\label{class_fun_expr}\index{FunExpr@{FunExpr}}
+Inheritance diagram for Fun\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_fun_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_fun_expr_ad2860d15ebc03cc31a2a8a22d5ab5164}{Fun\+Expr}} (std\+::string arg, PTR(Expr) body)
+\begin{DoxyCompactList}\small\item\em Sets argument and body for function expression. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_fun_expr_ac02bb92f52eff9079df3dd3416988c31}{equals}} (PTR(Expr) other)
+\begin{DoxyCompactList}\small\item\em Compare Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fun_expr_a29f778d31dce73ad13c31842e85f2667}\label{class_fun_expr_a29f778d31dce73ad13c31842e85f2667}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
+\item 
+\mbox{\Hypertarget{class_fun_expr_a21d29f42172d6f8171d13a016d9bcbe7}\label{class_fun_expr_a21d29f42172d6f8171d13a016d9bcbe7}} 
+void {\bfseries print} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em prints out the function expression with parentheses \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_fun_expr_a8403372f592ada30e2f4652480384d06}{pretty\+\_\+print}} ()
+\begin{DoxyCompactList}\small\item\em driver function for pretty print \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_fun_expr_ace5f20d42a04b8345994f2b80a7c6df4}\label{class_fun_expr_ace5f20d42a04b8345994f2b80a7c6df4}} 
+void {\bfseries pretty\+\_\+print\+\_\+at} (std\+::ostream \&os, \mbox{\hyperlink{expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, long pos, bool right\+\_\+side)
+\begin{DoxyCompactList}\small\item\em prints out the function expression with indentation, parentheses and precedence \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Public Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{class_fun_expr_a832c06aed4354d9abbc0036fc73031d9}\label{class_fun_expr_a832c06aed4354d9abbc0036fc73031d9}} 
+std\+::string {\bfseries arg}
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_fun_expr_ad2860d15ebc03cc31a2a8a22d5ab5164}\label{class_fun_expr_ad2860d15ebc03cc31a2a8a22d5ab5164}} 
+\index{FunExpr@{FunExpr}!FunExpr@{FunExpr}}
+\index{FunExpr@{FunExpr}!FunExpr@{FunExpr}}
+\doxysubsubsection{\texorpdfstring{FunExpr()}{FunExpr()}}
+{\footnotesize\ttfamily Fun\+Expr\+::\+Fun\+Expr (\begin{DoxyParamCaption}\item[{std\+::string}]{arg,  }\item[{PTR(Expr)}]{body }\end{DoxyParamCaption})}
+
+
+
+Sets argument and body for function expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em arg} & -\/ string representing argument \\
+\hline
+{\em body} & -\/ expression representing the right hand side of the expression \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_fun_expr_ac02bb92f52eff9079df3dd3416988c31}\label{class_fun_expr_ac02bb92f52eff9079df3dd3416988c31}} 
+\index{FunExpr@{FunExpr}!equals@{equals}}
+\index{equals@{equals}!FunExpr@{FunExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Fun\+Expr\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{other }\end{DoxyParamCaption})}
+
+
+
+Compare Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_fun_expr_a8403372f592ada30e2f4652480384d06}\label{class_fun_expr_a8403372f592ada30e2f4652480384d06}} 
+\index{FunExpr@{FunExpr}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!FunExpr@{FunExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily std\+::string Fun\+Expr\+::pretty\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+driver function for pretty print 
+
+\begin{DoxyReturn}{Returns}
+string of the expression 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8h}{expr.\+h}}\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8cpp}{expr.\+cpp}}\end{DoxyCompactItemize}

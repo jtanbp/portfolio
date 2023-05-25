@@ -1,0 +1,86 @@
+\hypertarget{class_eq_expr}{}\doxysection{Eq\+Expr Class Reference}
+\label{class_eq_expr}\index{EqExpr@{EqExpr}}
+Inheritance diagram for Eq\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_eq_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_eq_expr_a7bbb950c1c4394bd4943af3e2bc6af6a}{Eq\+Expr}} (PTR(Expr) lhs, PTR(Expr) rhs)
+\begin{DoxyCompactList}\small\item\em Sets left hand side and right hand side for equals expression. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_eq_expr_a8af6850be55de7be2a9c23c04edb0c8b}{equals}} (PTR(Expr) other)
+\begin{DoxyCompactList}\small\item\em Compare Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_eq_expr_a9a0956af9e91e83a0d22081792cb9d8e}\label{class_eq_expr_a9a0956af9e91e83a0d22081792cb9d8e}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
+\item 
+\mbox{\Hypertarget{class_eq_expr_af658dc1b8ce0939f375d52c5fa87533d}\label{class_eq_expr_af658dc1b8ce0939f375d52c5fa87533d}} 
+void {\bfseries print} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em prints out the Equals expression with parentheses \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_eq_expr_aa97a1e2382c04d29af103039cc4f8495}{pretty\+\_\+print}} ()
+\begin{DoxyCompactList}\small\item\em driver function for pretty print \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_eq_expr_a5bc6db8e1071ffb748f2a2e590db3436}\label{class_eq_expr_a5bc6db8e1071ffb748f2a2e590db3436}} 
+void {\bfseries pretty\+\_\+print\+\_\+at} (std\+::ostream \&os, \mbox{\hyperlink{expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, long pos, bool right\+\_\+side)
+\begin{DoxyCompactList}\small\item\em prints out the equals expression with parentheses and precedence \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_eq_expr_a7bbb950c1c4394bd4943af3e2bc6af6a}\label{class_eq_expr_a7bbb950c1c4394bd4943af3e2bc6af6a}} 
+\index{EqExpr@{EqExpr}!EqExpr@{EqExpr}}
+\index{EqExpr@{EqExpr}!EqExpr@{EqExpr}}
+\doxysubsubsection{\texorpdfstring{EqExpr()}{EqExpr()}}
+{\footnotesize\ttfamily Eq\+Expr\+::\+Eq\+Expr (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{lhs,  }\item[{PTR(Expr)}]{rhs }\end{DoxyParamCaption})}
+
+
+
+Sets left hand side and right hand side for equals expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em lhs} & -\/ expression representing the left hand side of the expression \\
+\hline
+{\em rhs} & -\/ expression representing the right hand side of the expression \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_eq_expr_a8af6850be55de7be2a9c23c04edb0c8b}\label{class_eq_expr_a8af6850be55de7be2a9c23c04edb0c8b}} 
+\index{EqExpr@{EqExpr}!equals@{equals}}
+\index{equals@{equals}!EqExpr@{EqExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Eq\+Expr\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{other }\end{DoxyParamCaption})}
+
+
+
+Compare Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_eq_expr_aa97a1e2382c04d29af103039cc4f8495}\label{class_eq_expr_aa97a1e2382c04d29af103039cc4f8495}} 
+\index{EqExpr@{EqExpr}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!EqExpr@{EqExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily std\+::string Eq\+Expr\+::pretty\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+driver function for pretty print 
+
+\begin{DoxyReturn}{Returns}
+string of the expression 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8h}{expr.\+h}}\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8cpp}{expr.\+cpp}}\end{DoxyCompactItemize}

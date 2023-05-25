@@ -1,0 +1,86 @@
+\hypertarget{class_call_expr}{}\doxysection{Call\+Expr Class Reference}
+\label{class_call_expr}\index{CallExpr@{CallExpr}}
+Inheritance diagram for Call\+Expr\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_call_expr}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_call_expr_a3ef94600446ee8158fcbef178f1503d8}{Call\+Expr}} (PTR(Expr) to\+\_\+be\+\_\+called, PTR(Expr) actual\+\_\+argument)
+\begin{DoxyCompactList}\small\item\em Sets expression to intepret in the call expression. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_call_expr_a06d8abe2086b63a9bbc33e07b57165ab}{equals}} (PTR(Expr) other)
+\begin{DoxyCompactList}\small\item\em Compare Value. \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_call_expr_afc0e06b33799b18171201ca6bb870a49}\label{class_call_expr_afc0e06b33799b18171201ca6bb870a49}} 
+{\bfseries PTR} (Val) interp(PTR(Env) env)
+\item 
+\mbox{\Hypertarget{class_call_expr_ae5429074158dc409d3dffc175c555163}\label{class_call_expr_ae5429074158dc409d3dffc175c555163}} 
+void {\bfseries print} (std\+::ostream \&os)
+\begin{DoxyCompactList}\small\item\em prints out the call expression with parentheses \end{DoxyCompactList}\item 
+std\+::string \mbox{\hyperlink{class_call_expr_aa2401470c553caa64f0452831c9e6f38}{pretty\+\_\+print}} ()
+\begin{DoxyCompactList}\small\item\em driver function for pretty print \end{DoxyCompactList}\item 
+\mbox{\Hypertarget{class_call_expr_a2a767d3060cf8f916529382980a79d78}\label{class_call_expr_a2a767d3060cf8f916529382980a79d78}} 
+void {\bfseries pretty\+\_\+print\+\_\+at} (std\+::ostream \&os, \mbox{\hyperlink{expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} precedence, long pos, bool right\+\_\+side)
+\begin{DoxyCompactList}\small\item\em prints out the call expression with parentheses and precedence \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_call_expr_a3ef94600446ee8158fcbef178f1503d8}\label{class_call_expr_a3ef94600446ee8158fcbef178f1503d8}} 
+\index{CallExpr@{CallExpr}!CallExpr@{CallExpr}}
+\index{CallExpr@{CallExpr}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{CallExpr()}{CallExpr()}}
+{\footnotesize\ttfamily Call\+Expr\+::\+Call\+Expr (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{to\+\_\+be\+\_\+called,  }\item[{PTR(Expr)}]{actual\+\_\+argument }\end{DoxyParamCaption})}
+
+
+
+Sets expression to intepret in the call expression. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em to\+\_\+be\+\_\+called} & -\/ expression representing the desired expression \\
+\hline
+{\em actual\+\_\+argument} & -\/ expression representing the actual argument of the expression \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_call_expr_a06d8abe2086b63a9bbc33e07b57165ab}\label{class_call_expr_a06d8abe2086b63a9bbc33e07b57165ab}} 
+\index{CallExpr@{CallExpr}!equals@{equals}}
+\index{equals@{equals}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Call\+Expr\+::equals (\begin{DoxyParamCaption}\item[{PTR(Expr)}]{other }\end{DoxyParamCaption})}
+
+
+
+Compare Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em other} & -\/ expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean result 
+\end{DoxyReturn}
+\mbox{\Hypertarget{class_call_expr_aa2401470c553caa64f0452831c9e6f38}\label{class_call_expr_aa2401470c553caa64f0452831c9e6f38}} 
+\index{CallExpr@{CallExpr}!pretty\_print@{pretty\_print}}
+\index{pretty\_print@{pretty\_print}!CallExpr@{CallExpr}}
+\doxysubsubsection{\texorpdfstring{pretty\_print()}{pretty\_print()}}
+{\footnotesize\ttfamily std\+::string Call\+Expr\+::pretty\+\_\+print (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})}
+
+
+
+driver function for pretty print 
+
+\begin{DoxyReturn}{Returns}
+string of the expression 
+\end{DoxyReturn}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8h}{expr.\+h}}\item 
+/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/\mbox{\hyperlink{expr_8cpp}{expr.\+cpp}}\end{DoxyCompactItemize}

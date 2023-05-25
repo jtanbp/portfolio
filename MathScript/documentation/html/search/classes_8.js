@@ -1,4 +1,5 @@
 var searchData=
 [
-  ['lazyexpression_0',['LazyExpression',['../class_catch_1_1_lazy_expression.html',1,'Catch']]]
+  ['num_0',['Num',['../class_num.html',1,'']]],
+  ['numval_1',['NumVal',['../class_num_val.html',1,'']]]
 ];

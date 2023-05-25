@@ -1,13 +1,71 @@
-\hypertarget{expr_8cpp}{}\doxysection{/\+Users/jowietan/\+Desktop/\+MSD/\+CS6015/\+Homework/\+Expression\+Class/\+Expression\+Class/expr.cpp File Reference}
-\label{expr_8cpp}\index{/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.cpp@{/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.cpp}}
+\hypertarget{expr_8cpp}{}\doxysection{/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/expr.cpp File Reference}
+\label{expr_8cpp}\index{/Users/jowietan/Desktop/portfolio/MathScript/expr.cpp@{/Users/jowietan/Desktop/portfolio/MathScript/expr.cpp}}
 
 
-Contains all the expression methods that are inherited by \mbox{\hyperlink{class_num}{Num}}, \mbox{\hyperlink{class_add}{Add}}, \mbox{\hyperlink{class_mult}{Mult}} and \mbox{\hyperlink{class_var}{Var}}.  
+Contains all the expression methods that are inherited by \mbox{\hyperlink{class_num}{Num}}, \mbox{\hyperlink{class_add}{Add}}, \mbox{\hyperlink{class_mult}{Mult}}, \mbox{\hyperlink{class_var}{Var}}, \mbox{\hyperlink{class_let}{Let}}, \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}}, \mbox{\hyperlink{class_if_expr}{If\+Expr}}, \mbox{\hyperlink{class_fun_expr}{Fun\+Expr}}, \mbox{\hyperlink{class_eq_expr}{Eq\+Expr}}, \mbox{\hyperlink{class_call_expr}{Call\+Expr}}.  
 
 
 {\ttfamily \#include \char`\"{}expr.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}val.\+h\char`\"{}}\newline
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{expr_8cpp_a6c3d4a8a2a90fee9ba487bcb36316f25}{PTR}} (Val) \mbox{\hyperlink{class_num}{Num}}
+\begin{DoxyCompactList}\small\item\em Interprets the \mbox{\hyperlink{class_num}{Num}} expression. \end{DoxyCompactList}\end{DoxyCompactItemize}
 
 
 \doxysubsection{Detailed Description}
-Contains all the expression methods that are inherited by \mbox{\hyperlink{class_num}{Num}}, \mbox{\hyperlink{class_add}{Add}}, \mbox{\hyperlink{class_mult}{Mult}} and \mbox{\hyperlink{class_var}{Var}}. 
+Contains all the expression methods that are inherited by \mbox{\hyperlink{class_num}{Num}}, \mbox{\hyperlink{class_add}{Add}}, \mbox{\hyperlink{class_mult}{Mult}}, \mbox{\hyperlink{class_var}{Var}}, \mbox{\hyperlink{class_let}{Let}}, \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}}, \mbox{\hyperlink{class_if_expr}{If\+Expr}}, \mbox{\hyperlink{class_fun_expr}{Fun\+Expr}}, \mbox{\hyperlink{class_eq_expr}{Eq\+Expr}}, \mbox{\hyperlink{class_call_expr}{Call\+Expr}}. 
 
+
+
+\doxysubsection{Function Documentation}
+\mbox{\Hypertarget{expr_8cpp_a6c3d4a8a2a90fee9ba487bcb36316f25}\label{expr_8cpp_a6c3d4a8a2a90fee9ba487bcb36316f25}} 
+\index{expr.cpp@{expr.cpp}!PTR@{PTR}}
+\index{PTR@{PTR}!expr.cpp@{expr.cpp}}
+\doxysubsubsection{\texorpdfstring{PTR()}{PTR()}}
+{\footnotesize\ttfamily PTR (\begin{DoxyParamCaption}\item[{Val}]{ }\end{DoxyParamCaption})}
+
+
+
+Interprets the \mbox{\hyperlink{class_num}{Num}} expression. 
+
+Interprets the call expression.
+
+Interprets the function expression.
+
+Interprets the equals expression by comparing both expression within the equals expression.
+
+Interprets the if expression.
+
+Interprets the bool expression by returning the bool val in the expression.
+
+Interprets the let expression by substituting the bound variable in the body with the value and interpreting the result.
+
+Interprets the variable expression.
+
+Interprets the \mbox{\hyperlink{class_mult}{Mult}} expression.
+
+Interprets the \mbox{\hyperlink{class_add}{Add}} expression.
+
+\begin{DoxyReturn}{Returns}
+int Value
+
+Int add the value of the left expression and right expression
+
+Int times the value of the left expression and right expression
+
+Runtime error as there is no value to interpret
+
+Int value of the let expression body
+
+boolean value
+
+Val of the interp (even if it is nested)
+
+Boolean result
+
+Function value
+
+Replacing actual argument in the expression that is about to be called 
+\end{DoxyReturn}

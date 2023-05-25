@@ -1,0 +1,36 @@
+\hypertarget{parse_8hpp_source}{}\doxysection{/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/parse.hpp}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{00001\ \textcolor{comment}{//}}
+\DoxyCodeLine{00002\ \textcolor{comment}{//\ \ parse.hpp}}
+\DoxyCodeLine{00003\ \textcolor{comment}{//\ \ ExpressionClass}}
+\DoxyCodeLine{00004\ \textcolor{comment}{//}}
+\DoxyCodeLine{00005\ \textcolor{comment}{//\ \ Created\ by\ Jowie\ Tan\ on\ 2/21/23.}}
+\DoxyCodeLine{00006\ \textcolor{comment}{//}}
+\DoxyCodeLine{00007\ }
+\DoxyCodeLine{00008\ \textcolor{preprocessor}{\#ifndef\ parse\_hpp}}
+\DoxyCodeLine{00009\ \textcolor{preprocessor}{\#define\ parse\_hpp}}
+\DoxyCodeLine{00010\ }
+\DoxyCodeLine{00011\ \textcolor{preprocessor}{\#include\ <stdio.h>}}
+\DoxyCodeLine{00012\ \textcolor{preprocessor}{\#include\ "{}\mbox{\hyperlink{expr_8h}{expr.h}}"{}}}
+\DoxyCodeLine{00013\ \textcolor{preprocessor}{\#include\ "{}val.h"{}}}
+\DoxyCodeLine{00014\ }
+\DoxyCodeLine{00015\ PTR(Expr)\ parse\_str(std::string\ s);}
+\DoxyCodeLine{00016\ PTR(Expr)\ parse\_expr(std::istream\&\ in);}
+\DoxyCodeLine{00017\ PTR(Expr)\ parse\_addend(std::istream\ \&in);}
+\DoxyCodeLine{00018\ PTR(Expr)\ parse\_inner(std::istream\ \&in);}
+\DoxyCodeLine{00019\ PTR(Expr)\ parse\_multicand(std::istream\ \&in);}
+\DoxyCodeLine{00020\ PTR(Expr)\ parse\_num(std::istream\ \&in);}
+\DoxyCodeLine{00021\ std::string\ parse\_string(std::istream\ \&in);}
+\DoxyCodeLine{00022\ PTR(Expr)\ parse\_var(std::istream\ \&in);}
+\DoxyCodeLine{00023\ PTR(Expr)\ parse\_let(std::istream\ \&in);}
+\DoxyCodeLine{00024\ \textcolor{keywordtype}{void}\ consume(std::istream\ \&in,\ \textcolor{keywordtype}{int}\ expectation);}
+\DoxyCodeLine{00025\ \textcolor{keywordtype}{void}\ skip\_whitespaces(std::istream\ \&in);}
+\DoxyCodeLine{00026\ PTR(Expr)\ parse\_bool(std::istream\ \&in,\ \textcolor{keyword}{const}\ std::string\ \&keyword);}
+\DoxyCodeLine{00027\ PTR(Expr)\ parse\_if(std::istream\ \&in);}
+\DoxyCodeLine{00028\ PTR(Expr)\ parse\_eq(std::istream\ \&in);}
+\DoxyCodeLine{00029\ PTR(Expr)\ parse\_fun(std::istream\ \&in);}
+\DoxyCodeLine{00030\ }
+\DoxyCodeLine{00031\ \textcolor{preprocessor}{\#endif\ }\textcolor{comment}{/*\ parse\_hpp\ */}\textcolor{preprocessor}{}}
+
+\end{DoxyCode}

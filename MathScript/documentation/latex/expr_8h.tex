@@ -1,16 +1,18 @@
-\hypertarget{expr_8h}{}\doxysection{/\+Users/jowietan/\+Desktop/\+MSD/\+CS6015/\+Homework/\+Expression\+Class/\+Expression\+Class/expr.h File Reference}
-\label{expr_8h}\index{/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.h@{/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.h}}
+\hypertarget{expr_8h}{}\doxysection{/\+Users/jowietan/\+Desktop/portfolio/\+Math\+Script/expr.h File Reference}
+\label{expr_8h}\index{/Users/jowietan/Desktop/portfolio/MathScript/expr.h@{/Users/jowietan/Desktop/portfolio/MathScript/expr.h}}
 
 
 Contains the methods that would be defined in \mbox{\hyperlink{expr_8cpp}{expr.\+cpp}}.  
 
 
 {\ttfamily \#include $<$iostream$>$}\newline
+{\ttfamily \#include $<$sstream$>$}\newline
+{\ttfamily \#include $<$cstdlib$>$}\newline
 {\ttfamily \#include \char`\"{}catch.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}pointer.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}env.\+hpp\char`\"{}}\newline
 \doxysubsection*{Classes}
 \begin{DoxyCompactItemize}
-\item 
-class \mbox{\hyperlink{class_expr}{Expr}}
 \item 
 class \mbox{\hyperlink{class_num}{Num}}
 \item 
@@ -19,6 +21,37 @@ class \mbox{\hyperlink{class_add}{Add}}
 class \mbox{\hyperlink{class_mult}{Mult}}
 \item 
 class \mbox{\hyperlink{class_var}{Var}}
+\item 
+class \mbox{\hyperlink{class_let}{Let}}
+\item 
+class \mbox{\hyperlink{class_bool_expr}{Bool\+Expr}}
+\item 
+class \mbox{\hyperlink{class_if_expr}{If\+Expr}}
+\item 
+class \mbox{\hyperlink{class_eq_expr}{Eq\+Expr}}
+\item 
+class \mbox{\hyperlink{class_fun_expr}{Fun\+Expr}}
+\item 
+class \mbox{\hyperlink{class_call_expr}{Call\+Expr}}
+\end{DoxyCompactItemize}
+\doxysubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}\label{expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}} 
+enum \mbox{\hyperlink{expr_8h_a9e5fdf365cd8dc7be4d972daf07f8bdf}{precedence\+\_\+t}} \{ \newline
+{\bfseries prec\+\_\+none}
+, {\bfseries prec\+\_\+eq}
+, {\bfseries prec\+\_\+add}
+, {\bfseries prec\+\_\+mult}
+, \newline
+{\bfseries prec\+\_\+let}
+ \}
+\begin{DoxyCompactList}\small\item\em defining precedence \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{expr_8h_a63b2eaf23b08c74ca88c315842119206}\label{expr_8h_a63b2eaf23b08c74ca88c315842119206}} 
+{\bfseries CLASS} (Expr)
 \end{DoxyCompactItemize}
 
 
