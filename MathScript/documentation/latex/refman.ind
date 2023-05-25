@@ -1,0 +1,87 @@
+\begin{theindex}
+
+  \item {/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/cmdline.h}, 
+		\hyperpage{21}
+  \item {/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.cpp}, 
+		\hyperpage{22}
+  \item {/Users/jowietan/Desktop/MSD/CS6015/Homework/ExpressionClass/ExpressionClass/expr.h}, 
+		\hyperpage{22}
+
+  \indexspace
+
+  \item {Add}, \hyperpage{9}
+    \subitem {Add}, \hyperpage{9}
+    \subitem {equals}, \hyperpage{10}
+    \subitem {has\_variable}, \hyperpage{10}
+    \subitem {interp}, \hyperpage{10}
+    \subitem {subst}, \hyperpage{11}
+
+  \indexspace
+
+  \item {equals}
+    \subitem {Add}, \hyperpage{10}
+    \subitem {Expr}, \hyperpage{12}
+    \subitem {Mult}, \hyperpage{14}
+    \subitem {Num}, \hyperpage{16}
+    \subitem {Var}, \hyperpage{18}
+  \item {Expr}, \hyperpage{11}
+    \subitem {equals}, \hyperpage{12}
+    \subitem {has\_variable}, \hyperpage{12}
+    \subitem {interp}, \hyperpage{12}
+    \subitem {subst}, \hyperpage{12}
+
+  \indexspace
+
+  \item {has\_variable}
+    \subitem {Add}, \hyperpage{10}
+    \subitem {Expr}, \hyperpage{12}
+    \subitem {Mult}, \hyperpage{14}
+    \subitem {Num}, \hyperpage{16}
+    \subitem {Var}, \hyperpage{18}
+
+  \indexspace
+
+  \item {interp}
+    \subitem {Add}, \hyperpage{10}
+    \subitem {Expr}, \hyperpage{12}
+    \subitem {Mult}, \hyperpage{14}
+    \subitem {Num}, \hyperpage{16}
+    \subitem {Var}, \hyperpage{18}
+
+  \indexspace
+
+  \item {Mult}, \hyperpage{13}
+    \subitem {equals}, \hyperpage{14}
+    \subitem {has\_variable}, \hyperpage{14}
+    \subitem {interp}, \hyperpage{14}
+    \subitem {Mult}, \hyperpage{13}
+    \subitem {subst}, \hyperpage{14}
+
+  \indexspace
+
+  \item {Num}, \hyperpage{15}
+    \subitem {equals}, \hyperpage{16}
+    \subitem {has\_variable}, \hyperpage{16}
+    \subitem {interp}, \hyperpage{16}
+    \subitem {Num}, \hyperpage{15}
+    \subitem {subst}, \hyperpage{16}
+
+  \indexspace
+
+  \item {subst}
+    \subitem {Add}, \hyperpage{11}
+    \subitem {Expr}, \hyperpage{12}
+    \subitem {Mult}, \hyperpage{14}
+    \subitem {Num}, \hyperpage{16}
+    \subitem {Var}, \hyperpage{19}
+
+  \indexspace
+
+  \item {Var}, \hyperpage{17}
+    \subitem {equals}, \hyperpage{18}
+    \subitem {has\_variable}, \hyperpage{18}
+    \subitem {interp}, \hyperpage{18}
+    \subitem {subst}, \hyperpage{19}
+    \subitem {Var}, \hyperpage{18}
+
+\end{theindex}

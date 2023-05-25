@@ -1,0 +1,138 @@
+\hypertarget{class_num}{}\doxysection{Num Class Reference}
+\label{class_num}\index{Num@{Num}}
+Inheritance diagram for Num\+:\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[height=2.000000cm]{class_num}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{class_num_a9fce58e650a99ae50f4140ed9c87ec9f}{Num}} (int val)
+\begin{DoxyCompactList}\small\item\em Sets value. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_num_a21f3cd848c1b56a5ae795120826b489a}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$other)
+\begin{DoxyCompactList}\small\item\em Compare Value. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{class_num_a24f8a1c7ccad82bf7ed1080b59cda6dd}{interp}} ()
+\begin{DoxyCompactList}\small\item\em Interprets the \mbox{\hyperlink{class_num}{Num}} expression. \end{DoxyCompactList}\item 
+bool \mbox{\hyperlink{class_num_ad0ce114704933a1ebe4629848d3e2d6d}{has\+\_\+variable}} ()
+\begin{DoxyCompactList}\small\item\em check if expression has variable \end{DoxyCompactList}\item 
+\mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_num_affb65b547cd8ef9d5b623df61e04f1d0}{subst}} (std\+::string target, \mbox{\hyperlink{class_expr}{Expr}} $\ast$other)
+\begin{DoxyCompactList}\small\item\em if variable matches target string, replaces variable with \mbox{\hyperlink{class_expr}{Expr}} other. However, since this is not a variable, there is no change. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\begin{DoxyCompactItemize}
+\item 
+virtual bool \mbox{\hyperlink{class_expr_abf9cdb765fb84304881789d273d7594f}{equals}} (\mbox{\hyperlink{class_expr}{Expr}} $\ast$e)=0
+\item 
+virtual int \mbox{\hyperlink{class_expr_aeba8585d8225419d49166371306542c1}{interp}} ()=0
+\item 
+virtual bool \mbox{\hyperlink{class_expr_a92dc26078993a4b9721ea732274a435c}{has\+\_\+variable}} ()=0
+\item 
+virtual \mbox{\hyperlink{class_expr}{Expr}} $\ast$ \mbox{\hyperlink{class_expr_a86721c58206b6be6510a7d433943053c}{subst}} (std\+::string target, \mbox{\hyperlink{class_expr}{Expr}} $\ast$other)=0
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\mbox{\Hypertarget{class_num_a9fce58e650a99ae50f4140ed9c87ec9f}\label{class_num_a9fce58e650a99ae50f4140ed9c87ec9f}} 
+\index{Num@{Num}!Num@{Num}}
+\index{Num@{Num}!Num@{Num}}
+\doxysubsubsection{\texorpdfstring{Num()}{Num()}}
+{\footnotesize\ttfamily Num\+::\+Num (\begin{DoxyParamCaption}\item[{int}]{val }\end{DoxyParamCaption})}
+
+
+
+Sets value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em value} & \\
+\hline
+\end{DoxyParams}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{class_num_a21f3cd848c1b56a5ae795120826b489a}\label{class_num_a21f3cd848c1b56a5ae795120826b489a}} 
+\index{Num@{Num}!equals@{equals}}
+\index{equals@{equals}!Num@{Num}}
+\doxysubsubsection{\texorpdfstring{equals()}{equals()}}
+{\footnotesize\ttfamily bool Num\+::equals (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Compare Value. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em \mbox{\hyperlink{class_expr}{Expr}}} & other \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+Boolean result 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr}{Expr}}.
+
+\mbox{\Hypertarget{class_num_ad0ce114704933a1ebe4629848d3e2d6d}\label{class_num_ad0ce114704933a1ebe4629848d3e2d6d}} 
+\index{Num@{Num}!has\_variable@{has\_variable}}
+\index{has\_variable@{has\_variable}!Num@{Num}}
+\doxysubsubsection{\texorpdfstring{has\_variable()}{has\_variable()}}
+{\footnotesize\ttfamily bool Num\+::has\+\_\+variable (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+check if expression has variable 
+
+\begin{DoxyReturn}{Returns}
+Boolean false 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr}{Expr}}.
+
+\mbox{\Hypertarget{class_num_a24f8a1c7ccad82bf7ed1080b59cda6dd}\label{class_num_a24f8a1c7ccad82bf7ed1080b59cda6dd}} 
+\index{Num@{Num}!interp@{interp}}
+\index{interp@{interp}!Num@{Num}}
+\doxysubsubsection{\texorpdfstring{interp()}{interp()}}
+{\footnotesize\ttfamily int Num\+::interp (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+Interprets the \mbox{\hyperlink{class_num}{Num}} expression. 
+
+\begin{DoxyReturn}{Returns}
+int Value 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr}{Expr}}.
+
+\mbox{\Hypertarget{class_num_affb65b547cd8ef9d5b623df61e04f1d0}\label{class_num_affb65b547cd8ef9d5b623df61e04f1d0}} 
+\index{Num@{Num}!subst@{subst}}
+\index{subst@{subst}!Num@{Num}}
+\doxysubsubsection{\texorpdfstring{subst()}{subst()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{class_expr}{Expr}} $\ast$ Num\+::subst (\begin{DoxyParamCaption}\item[{std\+::string}]{target,  }\item[{\mbox{\hyperlink{class_expr}{Expr}} $\ast$}]{other }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [virtual]}}
+
+
+
+if variable matches target string, replaces variable with \mbox{\hyperlink{class_expr}{Expr}} other. However, since this is not a variable, there is no change. 
+
+
+\begin{DoxyParams}{Parameters}
+{\em string} & target -\/ target string to replace \\
+\hline
+{\em Expr$\ast$} & other -\/ replacement expression \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+this (no change) 
+\end{DoxyReturn}
+
+
+Implements \mbox{\hyperlink{class_expr}{Expr}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+/\+Users/jowietan/\+Desktop/\+MSD/\+CS6015/\+Homework/\+Expression\+Class/\+Expression\+Class/\mbox{\hyperlink{expr_8h}{expr.\+h}}\item 
+/\+Users/jowietan/\+Desktop/\+MSD/\+CS6015/\+Homework/\+Expression\+Class/\+Expression\+Class/\mbox{\hyperlink{expr_8cpp}{expr.\+cpp}}\end{DoxyCompactItemize}
