@@ -1,8 +1,7 @@
 /**
  * \file expr.cpp
- * \brief Contains all the expression methods that are inherited by Num, Add, Mult and Var.
+ * \brief Contains all the expression methods that are inherited by Num, Add, Mult, Var, Let, BoolExpr, IfExpr, FunExpr, EqExpr, CallExpr.
  */
-
 #include "expr.h"
 #include "val.h"
 
