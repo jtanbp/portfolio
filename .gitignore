@@ -1,0 +1,61 @@
+# Prerequisites
+*.d
+
+# Compiled Object files
+*.slo
+*.lo
+*.o
+*.obj
+
+# Precompiled Headers
+*.gch
+*.pch
+
+# Compiled Dynamic libraries
+*.so
+*.dylib
+*.dll
+
+# Fortran module files
+*.mod
+*.smod
+
+# Compiled Static libraries
+*.lai
+*.la
+*.a
+*.lib
+
+# Executables
+*.exe
+*.exec
+*.out
+*.app
+
+# CMake
+cmake-build-*/
+CMakeLists.txt
+
+# Other
+*.idea
+*.DS_Store
+
+# IntelliJ
+out/
+.idea/
+.idea_modules/
+*.iml
+*.ipr
+*.iws
+
+# OS X
+*.DS_Store
+
+# Java
+*.class
+.mtj.tmp/
+*.jar
+*.war
+*.ear
+*.nar
+hs_err_pid*
